@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://complaint.ic3.gov/default.aspx -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>
+	IC3 Complaint Referral Form
+</title>
+<link media="all" href="IC3 Complaint Referral Form_files/styles.min.css" type="text/css" rel="stylesheet">
+<style id="printDraft" type="text/css" media="print">
+        body:before,body:after { color:#f00;position:fixed;line-height:1em;text-align:center;width:100%;font-size:150%;z-index:-100;opacity:0.7;filter:Alpha(opacity=70);content:"This is a draft complaint and has not been submitted to the IC3." }
+        body:after { bottom:0; }
+        body:before { top:0; }
+        #captcha,#privacyact,button { display:none; }
+    </style>
+    <!--<script src="/scripts/federated-analytics.js" type="text/javascript"></script>-->
+    
+        <script type="text/javascript" async="" src="./IC3 Complaint Referral Form_files/recaptcha__en.js.download"></script><script src="./IC3 Complaint Referral Form_files/jquery-2.2.1.min.js.download" type="text/javascript"></script>
+        <script src="IC3 Complaint Referral Form_files/api.js.download"></script>
+    </head>
+<body>
+        <form id="IC3ComplaintForm" method="post" action="">
+            <input type="hidden" name="COMPLAINT_SESSION" value="6lLpq9eVIFLGgg==">
+            <aside>
+                <strong>Note:</strong> Fields marked with <mark class="required">*</mark> are required.
+            </aside>
+            <div id="validation"></div>
+            <section id="questions">
+                <section id="personalinfo">
+                    <fieldset>
+                        <legend>Victim Information</legend>
+                        <label class="bec required">
+                            <span><mark>* </mark>Name:</span>
+                            <input name="V_NAME" size="30" maxlength="50" required="" type="text" data-field="Victim Name"></label>
+                       <label>
+                            <span>Age:</span>
+                            <select name="V_AGE_RANGE" data-field="Victim Age">
+                                <option value="">Please select one...
+                                </option><optgroup label="">
+                                    <option value="Under 20">Under 20
+                                    </option><option value="20 - 29">20 - 29
+                                    </option><option value="30 - 39">30 - 39
+                                    </option><option value="40 - 49">40 - 49
+                                    </option><option value="50 - 59">50 - 59
+                                    </option><option value="Over 60">Over 60
+                                </option></optgroup>
+                            </select>
+                        </label>
+                        <label class="bec required">
+                            <span><mark>* </mark>Address:</span>
+                            <input name="V_STREET1" size="35" maxlength="50" required="" type="text" data-field="Victim Street Address Line 1"></label>
+                        <label class="bec required">
+                            <span><mark>* </mark>City:</span>
+                            <input name="V_CITY" size="35" maxlength="50" required="" type="text" data-field="Victim City"></label>
+                        <label>
+                            <span>County:</span>
+                            <input name="V_COUNTY" size="35" maxlength="50" type="text" data-field="Victim County"></label>
+                       
+                           <label>
+                            <span>State:</span>
+                            <input name="V_COUNTY" size="35" maxlength="50" type="text" data-field="Victim County"></label>
+                        <label class="bec required">
+                            <span><mark>* </mark>Zip Code/Route:</span>
+                            <input name="V_MAIL_CODE" size="20" maxlength="20" required="" type="text" data-field="Victim Zip Code/Route"></label>
+                        <label class="bec required">
+                            <span><mark>* </mark>Phone Number:</span>
+                            <input name="V_PHONE" size="20" pattern="\d*" title="Please enter digits without punctuation for a telephone number." maxlength="50" required="" type="tel" data-field="Victim Phone Number"><mark>numbers only (1112223333)</mark></label>
+                        <label class="bec required">
+                            <span><mark>* </mark>Email Address:</span>
+                            <input name="V_EMAIL" class="email" size="30" maxlength="50" required="" type="email" data-field="Victim Email Address"><mark>jdoe@email.com</mark></label>
+                      </fieldset>
+                </section>
+                <section id="financialtransactions">
+                    <fieldset>
+                        <legend>Financial Transaction(s)</legend>
+                        <aside>Please complete one section for each financial transaction or attempted transaction related to this complaint. If there are no financial details, please proceed to the next section.</aside>
+                        <div>
+                            <div>
+                                <label class="bec">
+                                    <span>Transaction Type:</span> <select name="F_TYPE_1" data-field="Financial Transaction 1 Type">
+                                        <option value="">Please select one...
+                                        </option><optgroup label="">
+                                            <option value="Cash">Cash
+                                            </option><option value="Check">Check/Cashier's Check
+                                            </option><option value="CreditCard">Debit Card/Credit Card
+                                            </option><option value="MoneyOrder">Money Order
+                                            </option><option value="WireTransfer">Wire Transfer
+                                            </option><option value="PrepaidCard">Prepaid Card/Gift Card
+                                            </option><option value="VirtualCurrency">Virtual Currency
+                                            </option><option value="Other">Other
+                                        </option></optgroup>
+                                    </select>
+                                </label>
+                                <label disabled="disabled"><span>If other, please specify:</span> <input name="F_TYPE_OTHER_1" type="text" maxlength="50" size="35" placeholder="Payment Method" data-field="Financial Transaction 1 Other Type" disabled="disabled"></label>
+                            </div>
+                            <label class="bec" disabled="disabled"><span>Transaction Amount:</span> $<input name="F_TRANSACTION_AMOUNT_1" class="number" size="9" type="number" min="0" max="999999999.99" step="0.01" data-pattern="\d+(\.\d{0,2})?" title="Please enter a number without currency symbols or digit separators. Use the period(&#39;.&#39;) to represent decimals. (e.g. 1234.56) The amount lost must be less than $1,000,000,000." placeholder="0.00" data-field="Financial Transaction 1 Amount" disabled="disabled"></label>
+                            <label class="bec" disabled="disabled"><span>Transaction Date:</span> <input name="F_TRANSACTION_DATE_1" class="date" size="17" maxlength="10" type="text" pattern="(0?[1-9]|1[0-2])\/(0?[1-9]|[12]\d|3[01])\/\d{4}" title="Please use MM/DD/YYYY format." data-field="Financial Transaction 1 Date" placeholder="MM/DD/YYYY" disabled="disabled"></label>
+                            <hr class="ftbreak">
+                            <label class="bec" disabled="disabled"><span>Victim Bank Name:</span> <select name="F_V_COUNTRY_1" class="country" data-field="Financial Transaction 1 Victim Bank Country" disabled="disabled"><option value="">[None]
+</option><optgroup label="">
+<option value="USA">United States of America
+</option><option value="IND">India
+</option></optgroup></select></label>
+							<label class="bec" disabled="disabled"><span>IFSC Code:</span> <input name="F_V_BANK_STREET1_1" size="35" maxlength="50" type="text" data-field="Financial Transaction 1 Victim Bank Street Address Line 1" disabled="disabled"></label>
+                           <label class="bec" disabled="disabled"><span>Victim Branch Name:</span> <input name="F_V_SUITE_1" size="35" maxlength="50" type="text" data-field="Financial Transaction 1 Victim Bank Mail Stop" disabled="disabled"></label>
+                            <label class="bec" disabled="disabled"><span>Victim Bank City:</span> <input name="F_V_CITY_1" size="35" maxlength="50" type="text" data-field="Financial Transaction 1 Victim Bank City" disabled="disabled"></label>
+                            <label class="bec" disabled="disabled"><span>Victim Bank Country:</span> <select name="F_V_COUNTRY_1" class="country" data-field="Financial Transaction 1 Victim Bank Country" disabled="disabled"><option value="">[None]
+</option><optgroup label="">
+<option value="USA">United States of America
+</option><option value="IND">India
+</option></optgroup></select></label>
+                            <label class="bec" disabled="disabled"><span>Victim Bank State</span> <select name="F_V_STATE_1" class="state" data-field="Financial Transaction 1 Victim Bank U.S. State" disabled="disabled"><option value="">[None]
+</option><optgroup label="">
+<option value="AL">Alabama
+</option><option value="WY">Wyoming
+</option></optgroup>
+</select></label>
+                            <label class="bec" disabled="disabled"><span>Victim Bank Zip Code:</span> <input name="F_V_MAIL_CODE_1" size="20" maxlength="20" type="text" data-field="Financial Transaction 1 Victim Bank Zip Code" disabled="disabled"></label>
+                            <label class="bec" disabled="disabled"><span>Victim Name on Account:</span> <input name="F_V_ACCOUNT_NAME_1" size="35" maxlength="50" type="text" data-field="Financial Transaction 1 Victim Name on Account" disabled="disabled"></label>
+                            <label class="bec" disabled="disabled"><span>Victim Account Number:</span> <input name="F_V_ACCOUNT_NUMBER_1" size="35" maxlength="50" type="text" data-field="Financial Transaction 1 Victim Bank Account Number" disabled="disabled"></label>
+                            <hr class="ftbreak">
+                             <label class="bec" disabled="disabled"><span>Victim Bank Name:</span> <select name="F_V_COUNTRY_1" class="country" data-field="Financial Transaction 1 Victim Bank Country" disabled="disabled"><option value="">[None]
+</option><optgroup label="">
+<option value="USA">United States of America
+</option><option value="IND">India
+</option></optgroup></select></label>
+							<label class="bec" disabled="disabled"><span>Recipient Account No./UID:</span> <input name="F_R_BANK_STREET1_1" size="35" maxlength="50" type="text" data-field="Financial Transaction 1 Recipient Street Address Line 1" disabled="disabled"></label>
+                            <label class="bec" disabled="disabled"><span>Recipient Branch IFSC Code:</span> <input name="F_R_BANK_STREET2_1" size="35" maxlength="50" type="text" data-field="Financial Transaction 1 Recipient Bank Street Address Line 2" disabled="disabled"></label>
+                            <label class="bec" disabled="disabled"><span>Recipient Bank City:</span> <input name="F_R_CITY_1" size="35" maxlength="50" type="text" data-field="Financial Transaction 1 Recipient Bank City" disabled="disabled"></label>
+                            <label class="bec" disabled="disabled"><span>Victim Name on Account:</span> <input name="F_V_ACCOUNT_NAME_1" size="35" maxlength="50" type="text" data-field="Financial Transaction 1 Victim Name on Account" disabled="disabled"></label>
+                            
+                            <label class="bec" disabled="disabled"><span>Recipient Bank State</span> <select name="F_R_STATE_1" class="state" data-field="Financial Transaction 1 Recipient Bank U.S. State" disabled="disabled"><option value="">[None]
+</option><optgroup label="">
+<option value="AL">Alabama
+</option><option value="AK">Alaska
+</option><option value="AS">American Samoa
+</option><option value="AZ">Arizona
+</option><option value="AR">Arkansas
+</option><option value="CA">California
+</option><option value="CO">Colorado
+</option><option value="CT">Connecticut
+</option><option value="DE">Delaware
+</option><option value="DC">District of Columbia
+</option><option value="FL">Florida
+</option><option value="GA">Georgia
+</option><option value="GU">Guam
+</option><option value="HI">Hawaii
+</option><option value="ID">Idaho
+</option><option value="IL">Illinois
+</option><option value="IN">Indiana
+</option><option value="IA">Iowa
+</option><option value="KS">Kansas
+</option><option value="KY">Kentucky
+</option><option value="LA">Louisiana
+</option><option value="ME">Maine
+</option><option value="MD">Maryland
+</option><option value="MA">Massachusetts
+</option><option value="MI">Michigan
+</option><option value="MN">Minnesota
+</option><option value="MS">Mississippi
+</option><option value="MO">Missouri
+</option><option value="MT">Montana
+</option><option value="NE">Nebraska
+</option><option value="NV">Nevada
+</option><option value="NH">New Hampshire
+</option><option value="NJ">New Jersey
+</option><option value="NM">New Mexico
+</option><option value="NY">New York
+</option><option value="NC">North Carolina
+</option><option value="ND">North Dakota
+</option><option value="MP">Northern Mariana Islands
+</option><option value="OH">Ohio
+</option><option value="OK">Oklahoma
+</option><option value="OR">Oregon
+</option><option value="PA">Pennsylvania
+</option><option value="PR">Puerto Rico
+</option><option value="RI">Rhode Island
+</option><option value="SC">South Carolina
+</option><option value="SD">South Dakota
+</option><option value="TN">Tennessee
+</option><option value="TX">Texas
+</option><option value="UM">United States Minor Outlying Islands
+</option><option value="UT">Utah
+</option><option value="VT">Vermont
+</option><option value="VI">Virgin Islands, U.S.
+</option><option value="VA">Virginia
+</option><option value="WA">Washington
+</option><option value="WV">West Virginia
+</option><option value="WI">Wisconsin
+</option><option value="WY">Wyoming
+</option></optgroup>
+</select></label>
+                            <label class="bec" disabled="disabled"><span>Recipient Bank Zip Code/Route:</span> <input name="F_R_MAIL_CODE_1" size="20" maxlength="20" type="text" data-field="Financial Transaction 1 Recipient Bank Zip Code" disabled="disabled"></label>
+                            </div>
+                    </fieldset>
+                </section>
+                <section id="incidentdetails">
+                    <fieldset>
+                        <legend>Description of Incident</legend>
+                        <label class="bec ta required"><mark class="required">* </mark>Provide a description of the incident and how you were victimized. Provide information not captured elsewhere in this complaint form.
+                            <textarea name="I_DESCRIPTION" maxlength="12000" rows="20" required="" data-field="Description of Incident"></textarea>
+                        </label>
+                        <fieldset class="bec"><legend>Which of the following were used in this incident? (Check all that apply.)</legend>
+                            <label><input name="I_USED" type="checkbox" value="SPOOF_EMAIL">Spoofed Email</label>
+                            <label><input name="I_USED" type="checkbox" value="SIM_DOMAIN">Similar Domain</label>
+                            <label><input name="I_USED" type="checkbox" value="EMAIL_INT">Email Intrusion</label>
+                            <div id="iusedother">
+                                <label><input name="I_USED" type="checkbox" value="OTHER">Other</label> <label disabled="disabled">Please specify: <input name="I_USED_OTHER" type="text" maxlength="50" size="35" data-field="Description of Incident Other Type" disabled="disabled"></label>
+                            </div>
+                        </fieldset>
+                        <aside>
+                            <p>
+                                Law enforcement or regulatory agencies may desire copies of pertinent documents or other evidence regarding your complaint.</p>
+                            <p>
+                                Originals should be retained for use by law enforcement agencies.</p>
+                        </aside>
+                    </fieldset>
+                </section>
+                <section id="subjectinfo">
+                    <fieldset>
+                        <legend>Information About The Subject(s) Who Victimized You</legend>
+                        <aside>Please complete one section for each subject who victimized you. If subject(s) are not known, proceed to the next section.</aside>
+                        <div>
+                            <label><span>Name:</span> <input name="P_NAME_1" size="30" maxlength="50" type="text" data-field="Subject 1 Name"></label>
+                            <label><span>Business Name:</span> <input name="P_BUSINESS_NAME_1" size="30" maxlength="50" type="text" data-field="Subject 1 Business Name"></label>
+                            <label><span>Address:</span> <input name="P_STREET1_1" size="35" maxlength="50" type="text" data-field="Subject 1 Street Address Line 1"></label>
+                            <label><span>Address (continued):</span> <input name="P_STREET2_1" size="35" maxlength="50" type="text" data-field="Subject 1 Street Address Line 2"></label>
+                            <label><span>Suite/Apt./Mail Stop:</span> <input name="P_SUITE_1" size="35" maxlength="50" type="text" data-field="Subject 1 Mail Stop"></label>
+                            <label><span>City:</span> <input name="P_CITY_1" size="35" maxlength="50" type="text" data-field="Subject 1 City"></label>
+                            <label><span>Country:</span> <select name="P_COUNTRY_1" class="country" data-field="Subject 1 Country"><option value="">[None]
+</option><optgroup label="">
+<option value="USA">United States of America
+</option><option value="AFG">Afghanistan
+</option><option value="ALA">Åland Islands
+</option><option value="ALB">Albania
+</option><option value="DZA">Algeria
+</option><option value="AND">Andorra
+</option><option value="AGO">Angola
+</option><option value="AIA">Anguilla
+</option><option value="ATA">Antarctica
+</option><option value="ATG">Antigua and Barbuda
+</option><option value="ARG">Argentina
+</option><option value="ARM">Armenia
+</option><option value="ABW">Aruba
+</option><option value="AUS">Australia
+</option><option value="AUT">Austria
+</option><option value="AZE">Azerbaijan
+</option><option value="BHS">Bahamas
+</option><option value="BHR">Bahrain
+</option><option value="BGD">Bangladesh
+</option><option value="BRB">Barbados
+</option><option value="BLR">Belarus
+</option><option value="BEL">Belgium
+</option><option value="BLZ">Belize
+</option><option value="BEN">Benin
+</option><option value="BMU">Bermuda
+</option><option value="BTN">Bhutan
+</option><option value="BOL">Bolivia (Plurinational State of)
+</option><option value="BES">Bonaire, Sint Eustatius and Saba
+</option><option value="BIH">Bosnia and Herzegovina
+</option><option value="BWA">Botswana
+</option><option value="BVT">Bouvet Island
+</option><option value="BRA">Brazil
+</option><option value="IOT">British Indian Ocean Territory
+</option><option value="BRN">Brunei Darussalam
+</option><option value="BGR">Bulgaria
+</option><option value="BFA">Burkina Faso
+</option><option value="BDI">Burundi
+</option><option value="CPV">Cabo Verde
+</option><option value="KHM">Cambodia
+</option><option value="CMR">Cameroon
+</option><option value="CAN">Canada
+</option><option value="CYM">Cayman Islands
+</option><option value="CAF">Central African Republic
+</option><option value="TCD">Chad
+</option><option value="CHL">Chile
+</option><option value="CHN">China
+</option><option value="CXR">Christmas Island
+</option><option value="CCK">Cocos (Keeling) Islands
+</option><option value="COL">Colombia
+</option><option value="COM">Comoros
+</option><option value="COG">Congo
+</option><option value="COD">Congo (Democratic Republic of the)
+</option><option value="COK">Cook Islands
+</option><option value="CRI">Costa Rica
+</option><option value="CIV">Côte d'Ivoire
+</option><option value="HRV">Croatia
+</option><option value="CUB">Cuba
+</option><option value="CUW">Curaçao
+</option><option value="CYP">Cyprus
+</option><option value="CZE">Czech Republic
+</option><option value="DNK">Denmark
+</option><option value="DJI">Djibouti
+</option><option value="DMA">Dominica
+</option><option value="DOM">Dominican Republic
+</option><option value="ECU">Ecuador
+</option><option value="EGY">Egypt
+</option><option value="SLV">El Salvador
+</option><option value="GNQ">Equatorial Guinea
+</option><option value="ERI">Eritrea
+</option><option value="EST">Estonia
+</option><option value="ETH">Ethiopia
+</option><option value="FLK">Falkland Islands (Malvinas)
+</option><option value="FRO">Faroe Islands
+</option><option value="FJI">Fiji
+</option><option value="FIN">Finland
+</option><option value="FRA">France
+</option><option value="GUF">French Guiana
+</option><option value="PYF">French Polynesia
+</option><option value="ATF">French Southern Territories
+</option><option value="GAB">Gabon
+</option><option value="GMB">Gambia
+</option><option value="GEO">Georgia
+</option><option value="DEU">Germany
+</option><option value="GHA">Ghana
+</option><option value="GIB">Gibraltar
+</option><option value="GRC">Greece
+</option><option value="GRL">Greenland
+</option><option value="GRD">Grenada
+</option><option value="GLP">Guadeloupe
+</option><option value="GTM">Guatemala
+</option><option value="GGY">Guernsey
+</option><option value="GIN">Guinea
+</option><option value="GNB">Guinea-Bissau
+</option><option value="GUY">Guyana
+</option><option value="HTI">Haiti
+</option><option value="HMD">Heard Island and McDonald Islands
+</option><option value="VAT">Holy See
+</option><option value="HND">Honduras
+</option><option value="HKG">Hong Kong
+</option><option value="HUN">Hungary
+</option><option value="ISL">Iceland
+</option><option value="IND">India
+</option><option value="IDN">Indonesia
+</option><option value="IRN">Iran (Islamic Republic of)
+</option><option value="IRQ">Iraq
+</option><option value="IRL">Ireland
+</option><option value="IMN">Isle of Man
+</option><option value="ISR">Israel
+</option><option value="ITA">Italy
+</option><option value="JAM">Jamaica
+</option><option value="JPN">Japan
+</option><option value="JEY">Jersey
+</option><option value="JOR">Jordan
+</option><option value="KAZ">Kazakhstan
+</option><option value="KEN">Kenya
+</option><option value="KIR">Kiribati
+</option><option value="PRK">Korea (Democratic People's Republic of)
+</option><option value="KOR">Korea (Republic of)
+</option><option value="KWT">Kuwait
+</option><option value="KGZ">Kyrgyzstan
+</option><option value="LAO">Lao People's Democratic Republic
+</option><option value="LVA">Latvia
+</option><option value="LBN">Lebanon
+</option><option value="LSO">Lesotho
+</option><option value="LBR">Liberia
+</option><option value="LBY">Libya
+</option><option value="LIE">Liechtenstein
+</option><option value="LTU">Lithuania
+</option><option value="LUX">Luxembourg
+</option><option value="MAC">Macao
+</option><option value="MKD">Macedonia (the former Yugoslav Republic of)
+</option><option value="MDG">Madagascar
+</option><option value="MWI">Malawi
+</option><option value="MYS">Malaysia
+</option><option value="MDV">Maldives
+</option><option value="MLI">Mali
+</option><option value="MLT">Malta
+</option><option value="MHL">Marshall Islands
+</option><option value="MTQ">Martinique
+</option><option value="MRT">Mauritania
+</option><option value="MUS">Mauritius
+</option><option value="MYT">Mayotte
+</option><option value="MEX">Mexico
+</option><option value="FSM">Micronesia (Federated States of)
+</option><option value="MDA">Moldova (Republic of)
+</option><option value="MCO">Monaco
+</option><option value="MNG">Mongolia
+</option><option value="MNE">Montenegro
+</option><option value="MSR">Montserrat
+</option><option value="MAR">Morocco
+</option><option value="MOZ">Mozambique
+</option><option value="MMR">Myanmar
+</option><option value="NAM">Namibia
+</option><option value="NRU">Nauru
+</option><option value="NPL">Nepal
+</option><option value="NLD">Netherlands
+</option><option value="NCL">New Caledonia
+</option><option value="NZL">New Zealand
+</option><option value="NIC">Nicaragua
+</option><option value="NER">Niger
+</option><option value="NGA">Nigeria
+</option><option value="NIU">Niue
+</option><option value="NFK">Norfolk Island
+</option><option value="NOR">Norway
+</option><option value="OMN">Oman
+</option><option value="PAK">Pakistan
+</option><option value="PLW">Palau
+</option><option value="PSE">Palestinian Territory, Occupied
+</option><option value="PAN">Panama
+</option><option value="PNG">Papua New Guinea
+</option><option value="PRY">Paraguay
+</option><option value="PER">Peru
+</option><option value="PHL">Philippines
+</option><option value="PCN">Pitcairn
+</option><option value="POL">Poland
+</option><option value="PRT">Portugal
+</option><option value="QAT">Qatar
+</option><option value="REU">Réunion
+</option><option value="ROU">Romania
+</option><option value="RUS">Russian Federation
+</option><option value="RWA">Rwanda
+</option><option value="BLM">Saint Barthélemy
+</option><option value="SHN">Saint Helena, Ascension and Tristan da Cunha
+</option><option value="KNA">Saint Kitts and Nevis
+</option><option value="LCA">Saint Lucia
+</option><option value="MAF">Saint Martin (French part)
+</option><option value="SPM">Saint Pierre and Miquelon
+</option><option value="VCT">Saint Vincent and the Grenadines
+</option><option value="WSM">Samoa
+</option><option value="SMR">San Marino
+</option><option value="STP">Sao Tome and Principe
+</option><option value="SAU">Saudi Arabia
+</option><option value="SEN">Senegal
+</option><option value="SRB">Serbia
+</option><option value="SYC">Seychelles
+</option><option value="SLE">Sierra Leone
+</option><option value="SGP">Singapore
+</option><option value="SXM">Sint Maarten (Dutch part)
+</option><option value="SVK">Slovakia
+</option><option value="SVN">Slovenia
+</option><option value="SLB">Solomon Islands
+</option><option value="SOM">Somalia
+</option><option value="ZAF">South Africa
+</option><option value="SGS">South Georgia and the South Sandwich Islands
+</option><option value="SSD">South Sudan
+</option><option value="ESP">Spain
+</option><option value="LKA">Sri Lanka
+</option><option value="SDN">Sudan
+</option><option value="SUR">Suriname
+</option><option value="SJM">Svalbard and Jan Mayen
+</option><option value="SWZ">Swaziland
+</option><option value="SWE">Sweden
+</option><option value="CHE">Switzerland
+</option><option value="SYR">Syrian Arab Republic
+</option><option value="TWN">Taiwan
+</option><option value="TJK">Tajikistan
+</option><option value="TZA">Tanzania, United Republic of
+</option><option value="THA">Thailand
+</option><option value="TLS">Timor-Leste
+</option><option value="TGO">Togo
+</option><option value="TKL">Tokelau
+</option><option value="TON">Tonga
+</option><option value="TTO">Trinidad and Tobago
+</option><option value="TUN">Tunisia
+</option><option value="TUR">Turkey
+</option><option value="TKM">Turkmenistan
+</option><option value="TCA">Turks and Caicos Islands
+</option><option value="TUV">Tuvalu
+</option><option value="UGA">Uganda
+</option><option value="UKR">Ukraine
+</option><option value="ARE">United Arab Emirates
+</option><option value="GBR">United Kingdom
+</option><option value="USA">United States of America
+</option><option value="URY">Uruguay
+</option><option value="UZB">Uzbekistan
+</option><option value="VUT">Vanuatu
+</option><option value="VEN">Venezuela (Bolivarian Republic of)
+</option><option value="VNM">Viet Nam
+</option><option value="VGB">Virgin Islands (British)
+</option><option value="WLF">Wallis and Futuna
+</option><option value="ESH">Western Sahara
+</option><option value="YEM">Yemen
+</option><option value="ZMB">Zambia
+</option><option value="ZWE">Zimbabwe
+</option></optgroup></select></label>
+                            <label disabled="disabled"><span>State:</span> <select name="P_STATE_1" class="state" data-field="Subject 1 U.S. State" disabled="disabled"><option value="">[None]
+</option><optgroup label="">
+<option value="AL">Alabama
+</option><option value="AK">Alaska
+</option><option value="AS">American Samoa
+</option>
+</option>
+</select></label>
+                            <label><span>Zip Code/Route:</span> <input name="P_MAIL_CODE_1" size="20" maxlength="20" type="text" data-field="Subject 1 Zip Code"></label>
+                            <label><span>Phone Number:</span> <input name="P_PHONE_1" pattern="\d*" title="Please enter digits without punctuation for a telephone number." size="20" maxlength="50" type="tel" data-field="Subject 1 Phone Number"><mark>numbers only (1112223333)</mark></label>
+                            <label><span>Email Address:</span> <input class="email" name="P_EMAIL_1" size="35" maxlength="50" type="email" data-field="Subject 1 Email Address"><mark>jdoe@email.com</mark></label>
+                            <label><span>Website:</span> <input name="P_WEBSITE_1" size="50" maxlength="100" type="text" placeholder="http://www.example.com/" data-field="Subject 1 Website"></label>
+                            <label><span>IP Address:</span> <input class="ip" name="P_IP_1" pattern="(((((1\d|[1-9])?\d|2([0-4]\d|5[0-5]))\.){3}((1\d|[1-9])?\d|2([0-4]\d|5[0-5])))|(([\da-f]{1,4}:{1,2}){1,7}[\da-f]{1,4})|(::([\da-f]{1,4}))|(([\da-f]){1,4}::))" title="Please use the standard formats for IPv4 or IPv6 addresses. (e.g. 123.45.67.89 or 2001:abc::1234)" size="39" maxlength="39" type="text" placeholder="123.45.67.89 or 2001:abc::1234" data-field="Subject 1 IP Address"></label>
+                        </div>
+                    </fieldset>
+                </section>
+                <section id="otherdetails">
+                    <fieldset>
+                        <legend>Other Information</legend>
+                        <label>If an email was used in this incident, please provide a copy of the entire email including full email headers.
+                            <textarea name="O_EMAIL" maxlength="5000" rows="5" data-field="Other Information Email Headers"></textarea>
+                        </label>
+                        <label>Are there any other witnesses or victims to this incident?
+                            <textarea name="O_WITNESS" maxlength="2000" rows="5" data-field="Other Information Witness Details"></textarea>
+                        </label>
+                        <label>If you have reported this incident to other law enforcement or government agencies, please provide the name, phone number, email, date reported, report number, etc.
+                            <textarea name="O_AGENCY" maxlength="2000" rows="5" data-field="Other Information Law Enforcment Agency Contact Details"></textarea>
+                        </label>
+                    </fieldset>
+                </section>
+                <section id="complainant">
+                    <fieldset>
+                        <legend>Who Filed the Complaint</legend>
+                        <label class="bec required"><mark class="required">* </mark> Were you the victim in the incident described above?
+                            <select name="CO" required="" data-field="Who Filed the Complaint">
+                                <option value="" disabled="" selected="">Please select one...
+                                </option><optgroup label="">
+                                    <option value="Y">Yes
+                                    </option><option value="N">No
+                                </option></optgroup>
+                            </select>
+                        </label>
+                        <div>
+                            <aside disabled="disabled">If not, please provide us with your contact information:</aside>
+                            <label class="bec" disabled="disabled"><span disabled="disabled">Name:</span> <input name="C_NAME" size="30" maxlength="50" type="text" data-field="Complainant Name" disabled="disabled"></label>
+                            <label class="bec" disabled="disabled"><span disabled="disabled">Business Name:</span> <input name="C_BUSINESS_NAME" size="30" maxlength="50" type="text" data-field="Complainant Business Name" disabled="disabled"></label>
+                            <label class="bec" disabled="disabled"><span disabled="disabled">Phone Number:</span> <input name="C_PHONE" pattern="\d*" title="Please enter numbers only without punctuation for a telephone number." size="20" maxlength="50" type="tel" data-field="Complainant Phone Number" disabled="disabled"><mark disabled="disabled">numbers only (1112223333)</mark></label>
+                            <label class="bec" disabled="disabled"><span disabled="disabled">Email Address:</span> <input class="email" name="C_EMAIL" size="30" maxlength="50" type="email" data-field="Complainant Email Address" disabled="disabled"><mark disabled="disabled">jdoe@email.com</mark></label>
+                        </div>
+                    </fieldset>
+                </section>
+                
+                <section id="digitalsignature">
+                    <fieldset>
+                        <legend>Digital Signature</legend>
+                        <aside>Read the following statement below, and confirm your agreement by typing your full name below in the box provided:</aside>
+                        <blockquote>
+                            By digitally signing this document, I affirm that the information I provided is true and accurate to the best of my knowledge. I understand that providing false information could make me subject to fine, imprisonment, or both. (Title 18, U.S. Code, Section 1001)
+                        </blockquote>
+                        <label class="required"><span><mark>* </mark>Digital Signature:</span> <input name="DIGITAL_SIGNATURE" size="35" maxlength="50" required="" type="text" data-field="Digital Signature"></label>
+                    </fieldset>
+                </section>
+                <div id="captcha"><mark class="required">* </mark><div class="g-recaptcha" data-sitekey="6LfaXhUTAAAAAAvKw_sNVIyc7f7wmqPdxd6p1hO9"><div style="width: 304px; height: 78px;"><div><iframe src="./IC3 Complaint Referral Form_files/anchor.html" width="304" height="78" role="presentation" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div></div>
+            </section>
+            <footer>
+                <button id="sub" type="submit"><span title="Submit"></span> <span>Submit Complaint</span></button>
+            </footer>
+        </form>
+    
+    
+    
+        <script src="IC3 Complaint Referral Form_files/complaint.min.js.download" type="text/javascript"></script>
+    
+
+
+<div style="background-color: #fff; border: 1px solid #ccc; box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); position: absolute; left: 0px; top: -10000px; transition: visibility 0s linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: #fff; opacity: 0.05;  filter: alpha(opacity=5)"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge" src="./IC3 Complaint Referral Form_files/bframe.html" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" name="3su32jq15jjq" style="width: 100%; height: 100%;"></iframe></div></div></body></html>
